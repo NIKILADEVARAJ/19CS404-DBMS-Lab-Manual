@@ -47,123 +47,146 @@ SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1142" height="555" alt="image" src="https://github.com/user-attachments/assets/b05a338a-9554-461c-b07f-775b6b488008" />
 
 ```sql
--- Paste your SQL code below for Question 1
+update products 
+set reorder_lvl =40 
+WHERE category='Grocery';
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1220" height="493" alt="image" src="https://github.com/user-attachments/assets/cd908730-02d7-4fda-bbc7-042e9e2f1eba" />
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="792" height="87" alt="image" src="https://github.com/user-attachments/assets/a62b8fd7-8ec0-4c98-a4b2-5a1594d6666c" />
 
 ```sql
--- Paste your SQL code below for Question 2
+UPDATE Customer 
+SET grade=5
+WHERE city='Chennai';
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1236" height="572" alt="image" src="https://github.com/user-attachments/assets/c473b43b-feeb-4840-a8df-3e3e2a3d19fb" />
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="1262" height="703" alt="image" src="https://github.com/user-attachments/assets/db34c22d-934e-43bd-94f2-74836007af7b" />
 
 ```sql
--- Paste your SQL code below for Question 3
+UPDATE Employees 
+set salary=case
+        when department_id=40 then round(salary*1.25)
+        when department_id=90 then round(salary*1.15)
+        when department_id=110 then round(salary*1.10 )
+        else salary
+end;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1223" height="548" alt="image" src="https://github.com/user-attachments/assets/57136b8f-6c01-491f-a817-abf4782d5b3a" />
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="999" height="210" alt="image" src="https://github.com/user-attachments/assets/22e78e2c-6668-4e63-adeb-502b068a835c" />
 
 ```sql
--- Paste your SQL code below for Question 4
+update products
+set product_name='Grapefruit'
+where product_id=4;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1235" height="326" alt="image" src="https://github.com/user-attachments/assets/fe091648-ea59-4499-a414-7ff22ed33d2d" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="1207" height="525" alt="image" src="https://github.com/user-attachments/assets/b317e9fb-22a5-4dc7-a97d-b3ed8ddc8773" />
 
 ```sql
--- Paste your SQL code below for Question 5
+DELETE FROM Customer 
+where GRADE=2 and CUST_NAME LIKE 'M%' AND PAYMENT_AMT<3000;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1235" height="494" alt="image" src="https://github.com/user-attachments/assets/70c3f7e0-bd4d-4263-a099-af2abf49c538" />
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1216" height="574" alt="image" src="https://github.com/user-attachments/assets/8d254b4d-fffe-4842-befb-58594f6c69b9" />
 
 ```sql
--- Paste your SQL code below for Question 6
+DELETE FROM Customer
+WHERE CUST_NAME LIKE '%Holmes%';
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1235" height="503" alt="image" src="https://github.com/user-attachments/assets/84d460ec-1f8b-4692-95b6-ca4a6ce05e57" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1275" height="714" alt="image" src="https://github.com/user-attachments/assets/eedf085b-c912-4a81-85ff-fe799bb40d94" />
 
 ```sql
--- Paste your SQL code below for Question 7
+DELETE FROM Customer 
+WHERE CUST_COUNTRY='India' AND CUST_CITY <> 'Chennai';
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1293" height="790" alt="image" src="https://github.com/user-attachments/assets/66fe6a83-e77d-4b3d-a8c4-f86aaed5ca28" />
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="964" height="440" alt="image" src="https://github.com/user-attachments/assets/0bf5f638-6817-43bf-a710-42e4149d08f3" />
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT order_no,order_date,purch_amt
+FROM orders
+where salesman_id=5001;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="962" height="486" alt="image" src="https://github.com/user-attachments/assets/a396411a-0e75-4242-a418-6bb972b2e988" />
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1120" height="538" alt="image" src="https://github.com/user-attachments/assets/bc29031b-9d76-4dd7-ae74-e3783786e422" />
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT * FROM Patients
+WHERE first_name LIKE 'A%';
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1231" height="468" alt="image" src="https://github.com/user-attachments/assets/919fb05d-2da4-4c44-a7cf-254817fdec13" />
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1131" height="598" alt="image" src="https://github.com/user-attachments/assets/381c81ee-43c3-4da1-94e2-b9db09343f0e" />
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT id,value1,
+      CASE
+      WHEN value1%2=0 then 'Even'
+      else 'Odd'
+      end as parity
+from Calculations;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1239" height="573" alt="image" src="https://github.com/user-attachments/assets/d5a50e59-e994-45c2-8b0e-f0b45d36b854" />
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
